@@ -8,9 +8,13 @@ import { theme } from "styles/theme";
 import { GlobalStyle } from "styles/GlobalStyle";
 import rootReducer from "reducers";
 
+console.log(rootReducer);
+
 const store = configureStore({
   reducer: rootReducer
 });
+
+console.log(store);
 
 const rootElement = document.getElementById("root");
 ReactDOM.render(
